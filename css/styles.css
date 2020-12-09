@@ -157,7 +157,16 @@ img {
   color: #000000;
 }
 
+.address-contact-info:hover .mail-icon,
+.address-contact-info:focus .mail-icon,
+.address-contact-info:hover .phone-icon,
+.address-contact-info:focus .phone-icon {
+  fill: var(--accent-color);
+}
+
 .address-contact-info {
+  display: flex;
+  align-items: center;
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -184,6 +193,18 @@ img {
   color: var(--white-color);
 }
 
+.mail-icon {
+  width: 18px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 /* ========HERO======== */
 
 .hero {
@@ -191,6 +212,14 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
+  background-size: cover;
 }
 
 .hero-title {
@@ -206,6 +235,22 @@ img {
 }
 
 /* ========OUR_QUALITIES======== */
+
+.qualities-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
 .qualities-list {
   display: flex;
@@ -257,6 +302,41 @@ img {
 }
 /* ======OUR_TEAM====== */
 
+.social-links-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-links-link:hover,
+.social-links-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-links-link:hover .social-link-icon,
+.social-links-link:focus .social-link-icon {
+  fill: var(--white-color);
+}
+
+.social-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
 .our-team {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -270,7 +350,6 @@ img {
 }
 
 .team-member-item {
-  height: 370px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -302,7 +381,50 @@ img {
   color: var(--primary-font-color);
 }
 
+/* =====OUR_CLIENTS====== */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-logo {
+  height: 45px;
+  fill: #afb1b8;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-list-link:hover .clients-logo,
+.clients-list-link:focus .clients-logo {
+  fill: var(--accent-color);
+}
+
 /* =====OUR_PROJECTS===== */
+
+.project-link:hover {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .our-projects {
   padding-top: 94px;
@@ -386,6 +508,10 @@ img {
 
 /* =====FOOTER===== */
 
+.footer .container {
+  display: flex;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -403,4 +529,47 @@ img {
 .footer .address-contact-info {
   display: inline-block;
   margin-top: 9px;
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+}
+
+.follow-us {
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-links {
+  margin-left: 70px;
 }
