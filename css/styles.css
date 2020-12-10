@@ -153,6 +153,10 @@ img {
   color: var(--accent-color);
 }
 
+.current-page {
+  color: var(--accent-color);
+}
+
 .header .logo {
   color: #000000;
 }
@@ -546,6 +550,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-top: 12px;
 }
 
 .footer-social-list {
